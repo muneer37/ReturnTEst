@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="FrameWork/src"/>
+	<classpathentry excluding="old/" kind="src" path="JAVA_PROGRAMS/src"/>
+	<classpathentry kind="src" path="JAVA_PROGRAMS/src/old"/>
+	<classpathentry kind="src" path="POI Apache/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="POI Apache/bin"/>
+</classpath>

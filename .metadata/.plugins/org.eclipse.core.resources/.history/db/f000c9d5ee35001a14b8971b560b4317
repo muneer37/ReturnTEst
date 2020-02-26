@@ -1,0 +1,22 @@
+package work;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class loginpage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver","c://drivers/chromedriver.exe");
+        
+		ChromeDriver cd = new ChromeDriver();
+		
+		cd.get("file:///C:/Users/MUNEER%20BASHA/OneDrive/Desktop/windows.html");
+		cd.findElement(By.xpath("//input[@placeholder='firstname']")).sendKeys("muneer");;
+		cd.findElement(By.name("username")).sendKeys("admin");
+		cd.findElement(By.name("pwd")).sendKeys("manager");
+		cd.findElement(By.xpath("//input[@type='submit']")).click();
+	}
+
+}

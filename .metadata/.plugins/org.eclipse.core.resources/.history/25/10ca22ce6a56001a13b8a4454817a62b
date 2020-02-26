@@ -1,0 +1,47 @@
+package Important_String_Inrv;
+
+import java.util.HashMap;
+import java.util.Set;
+import java.util.function.Function;
+
+public class RemoveSpaces {
+
+    static void duplicateCharCount(String inputString)
+    {
+       
+    	HashMap<Character, Integer> hmap = new HashMap<Character, Integer>();
+        char[] strArray = inputString.toCharArray();
+        for (char c : strArray)
+        {
+            if(hmap.containsKey(c))
+            {
+               hmap.put(c, hmap.get(c)+1);
+            }
+            else
+            {
+               hmap.put(c, 1);
+            }
+        }
+     Set<Character> charsInString = hmap.keySet();
+ 
+        System.out.println("Duplicate Characters In "+inputString);
+    for (Character ch : charsInString)
+        {
+            if(hmap.get(ch) > 1)
+            {
+                
+ 
+                System.out.println(ch +" : "+ hmap.get(ch));
+            }
+        }
+    }
+ 
+    public static void main(String[] args)
+    {
+       duplicateCharCount("Java Java");
+ 
+       //duplicateCharCount("Fresh Fish");
+       
+       //duplicateCharCount("Better Butter");
+    }
+}

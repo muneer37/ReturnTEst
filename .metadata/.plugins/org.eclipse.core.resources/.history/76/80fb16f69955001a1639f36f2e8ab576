@@ -1,0 +1,34 @@
+package imp_Inrv;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Count_Rep_Num {      // count the duplicate words in a given String and storing the maps
+	
+	
+	public static void main(String[] args)
+	{
+		String st="I love india i Love India";
+		String s2 =st.toLowerCase();
+		String []ar = s2.split(" ");
+		Map<String, Integer> mp= new HashMap<String, Integer>();
+		int count=0;
+
+		for(int i=0;i<ar.length-1;i++){
+		    //count=0;
+
+		    for(int j=i+1;j<ar.length-1;j++){
+		    	
+		        if(ar[i].equals(ar[j])){
+		        	
+		                count++;                
+		           }
+		    }
+
+		    mp.put(ar[i], count);
+		}
+
+		System.out.print(mp);
+	}
+ 
+}

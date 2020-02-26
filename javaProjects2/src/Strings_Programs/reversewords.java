@@ -1,0 +1,45 @@
+package Strings_Programs;
+
+import java.util.HashMap;         
+import java.util.Scanner;
+
+public class reversewords {        //type-3
+
+public static void main(String[] args)
+{
+    Scanner in=new Scanner(System.in);
+    System.out.println("Enter a String"); 
+    String s=in.nextLine();
+
+    char arr[]=s.toCharArray();
+
+    int count=0;
+    for(int i=arr.length-1; i >=0; i--)
+    {
+    	//System.out.println("arr="+arr[i]);
+            if(arr[i]==' '||i==0)
+            {
+                  if(i==0)
+                  {
+                        i--;
+                        count++;
+                  }
+
+                 for(int j=i+1; count >0; j++ )
+                  {
+                        System.out.print(arr[j]);
+                        count--;
+                  }
+                  System.out.print(" ");
+            }
+            else
+            {
+                count++;
+            }
+     }
+}
+
+}
+
+
+

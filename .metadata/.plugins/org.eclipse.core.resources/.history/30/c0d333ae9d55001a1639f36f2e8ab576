@@ -1,0 +1,34 @@
+package Practise;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CountRepeatedWords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str =" i am I Am";
+		String s2 = str.toLowerCase();
+		String []ar=s2.split(" ");
+		int count=0;
+		Map<String,Integer> maps = new HashMap<String,Integer>();
+
+		for(int i=0;i<ar.length;i++)
+		{
+		    count=0;
+           for(int j=0;j<ar.length;j++)
+           {
+		    	if(ar[i].equals(ar[j]))
+		    	    {
+		        	 count++;                
+		            }
+		    }
+
+		    maps.put(ar[i], count);
+		}
+
+		System.out.print(maps);
+	}
+ 
+}

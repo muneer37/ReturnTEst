@@ -1,0 +1,21 @@
+package Strings;
+
+public class R_Reverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "I Love India";
+		
+		String [] str= s1.split("");
+		
+		int i;
+		String s=" ";
+		for( i =str.length-1;i>=0;i--)
+		{
+			s=s+ str[i]+" ";
+		}
+		System.out.println(s);
+
+	}
+
+}

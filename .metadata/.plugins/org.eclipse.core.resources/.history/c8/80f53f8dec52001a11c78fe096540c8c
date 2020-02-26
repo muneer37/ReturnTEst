@@ -1,0 +1,10 @@
+package old2;
+
+public class Muneer
+{
+@SuppressWarnings("unused")
+private static void main(String [] args)
+{
+System.out.println("Hello World!");
+}
+}

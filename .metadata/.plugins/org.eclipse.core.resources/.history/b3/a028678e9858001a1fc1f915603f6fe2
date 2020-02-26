@@ -1,0 +1,34 @@
+package Important_String_Inrv;
+
+public class two_Str_duplicate {
+	
+public static void main(String[] args) {
+      
+		String a =" test Testing";
+		String b="test";
+		String str=a.toLowerCase();
+		String c=str+a;
+		
+		System.out.println("value="+c);
+		
+		String sr = c.toLowerCase();
+		char [] ch = sr.toCharArray();
+		int count=0;
+		
+      for(int i=0;i<=ch.length-1;i++){
+	   for(int j=i+1;j<=ch.length-1;j++){
+		   if(ch[i]==ch[j]){
+			   count++;
+			  System.out.print(ch[i]+" ");
+			 if(count>1)
+			  {
+				  System.out.println(ch[1]);
+			  }
+		    }
+		   
+          }
+	   
+        }
+   //System.out.print();
+	 }
+}

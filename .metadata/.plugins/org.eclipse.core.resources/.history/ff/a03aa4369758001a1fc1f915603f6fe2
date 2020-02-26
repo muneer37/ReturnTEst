@@ -1,0 +1,23 @@
+package Important_String_Inrv;
+
+public class two_Str_duplicate {
+	
+public static void main(String[] args) {
+      
+		String a =" test Testing";
+		String b="test";
+		String str=a.toLowerCase();
+		String c=str+a;
+		
+		System.out.println("value="+c);
+		
+		String sr = c.toLowerCase();
+		char [] ch = sr.toCharArray();
+		int s=a.compareTo(b);
+
+		System.out.println(s);
+  
+	   
+   
+	 }
+}

@@ -1,0 +1,32 @@
+package Practise;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CountRepeatedWords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str =" i am never forget I aM Never Forget";
+		String s2 = str.toLowerCase();
+		String []s3=s2.split(" ");
+		int count=0;
+		Map<String,Integer> maps = new HashMap<String,Integer>();
+		for(int i=0;i<s3.length;i++)
+		{
+			count=0;
+			for(int j=0;j<s3.length;j++)
+			{
+				if(s3[i].equalsIgnoreCase(s3[j]) )
+				{
+				count++;
+				}
+				
+			}
+		maps.put(s3[i],count);
+		}
+         System.out.println(maps);
+	}
+
+}

@@ -1,0 +1,44 @@
+package Important_String_Inrv;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class CountDuplicate {
+	
+	
+	
+	public static void duplicatechar(String inputdat)
+	{
+		HashMap<Character,Integer> hmaps = new HashMap<Character,Integer>();
+		
+		String inputdata =inputdat.toLowerCase();
+		 char [] chvalue = inputdata.toCharArray();
+		 for(char ch : chvalue)
+		 {
+			 if(hmaps.containsKey(ch))
+			 {
+				 int n = hmaps.get(ch)+1;
+				 hmaps.put(ch,n);
+		     }
+			 else
+			 {
+				 hmaps.put(ch,1 );
+			 }
+		}
+		 Set<Character> setdata=hmaps.keySet();
+		 for(Character car : setdata)
+		 {
+			if(hmaps.get(car) > 1 ) 
+			{
+				System.out.println(car+" "+hmaps.get(car));
+			}
+		 }
+  }
+
+	public static void main(String[] args) {
+      
+		duplicatechar("Java jAVA");
+
+	  }
+
+}

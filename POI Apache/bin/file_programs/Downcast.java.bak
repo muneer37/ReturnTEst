@@ -1,0 +1,49 @@
+class Munna 
+{
+	int a=89;
+	
+	public void test()
+	{
+		System.out.println("hii ");
+	}
+	
+	
+	}
+	class Raja extends Munna
+	{
+		int b=90;
+     public void java()
+	{
+		System.out.println(" how r u");
+	}
+class Dil extends Raja
+	{
+		int c=91;
+     public void apti()
+	{
+		System.out.println(" how r u");
+	}
+	
+	}
+class Downcast
+{
+public static void main(String[] args) 
+	{
+	Munna ref = new Dil();
+	ref.test();
+	
+       Raja ref2 = (Raja)ref;
+		System.out.println("a1="+ref2.a);
+		ref2.test();
+		ref2.java();
+		System.out.println("a2="+ref2.a);
+		System.out.println("b2="+ref2.b);
+		Dil ref3= (Dil)ref2;
+          ref3.apti();
+              ref3.test();
+		ref3.java();
+		System.out.println("a3="+ref3.a);
+		System.out.println("b3="+ref3.b);
+		System.out.println("c="+ref3.c);
+	}
+}

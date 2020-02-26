@@ -1,0 +1,38 @@
+package Strings;
+
+public class wordSpliting {
+
+	public static void main(String[] args) {
+			
+				new wordSpliting().reverse();
+			}
+	     
+	public void reverse()
+			{
+				String s= " i never give up hero munna raja";
+				String h[]= new String[6];
+				int count=0;
+				h[1]="";
+				h[2]="";
+				h[3]="";
+				h[4]="";
+				h[5]="";
+				h[6]="";
+				h[7]="";
+				for(int k=0;k<s.length();k++)
+				{
+					//System.out.println("ecahr ="+s.charAt(k));
+					if(s.charAt(k)==' ')
+					{
+						count++;
+					}
+					else
+					{
+						h[count]=h[count]+s.charAt(k);
+					}
+				}
+
+				   System.out.println(h[7]+" "+h[6]+" "+h[5]+" "+h[4]+" "+h[3]+" "+h[2]+" "+h[1]);
+			  }
+
+		}

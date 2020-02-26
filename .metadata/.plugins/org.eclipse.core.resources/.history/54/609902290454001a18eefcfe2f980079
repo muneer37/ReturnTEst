@@ -1,0 +1,14 @@
+package Strings;
+
+public class mk {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String str = "i love india";
+		str.split(" ");
+		//ystem.out.println(word);
+
+	}
+
+}

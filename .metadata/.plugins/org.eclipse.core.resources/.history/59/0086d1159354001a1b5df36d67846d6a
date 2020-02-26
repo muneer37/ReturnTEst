@@ -1,0 +1,68 @@
+package Strings_Programs_intrv;
+
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Trail {
+
+	public static void main(String[] args) {
+		
+
+     // /* 
+        String S1 = "This is testing Program Testing Program testing";
+        
+ String S2 = S1.toLowerCase();
+        String[] S3 = S2.split("\\s");
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for (String t : S3) {
+        	
+        	
+            if (map.containsKey(t)) {
+            	int key =map.get(t) + 1;
+                map.put(t, key);
+              //  System.out.println(  map.get(t));
+
+            } else {
+                map.put(t, 1);
+            }
+        }
+        Set<String> keys = map.keySet();
+        for (String key : keys) {
+            System.out.print(key);
+            System.out.println(" - word is repeated ="+map.get(key));
+        }
+
+
+	}
+
+}
+/*
+		
+		
+
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the data");
+   String inpStr = sc.nextLine();
+   int key;
+
+   HashMap<String,Integer> hm = new HashMap<String,Integer>();
+   String[] strArr = inpStr.split(" ");
+
+   for(int i=0;i<strArr.length;i++){
+   
+       if(hm.containsKey(strArr[i])){
+           key = hm.get(strArr[i]);
+           hm.put(strArr[i],key+1);
+
+       }
+       else{
+           hm.put(strArr[i],1);
+       }   
+   }
+   System.out.println(hm);
+}
+}
+*/

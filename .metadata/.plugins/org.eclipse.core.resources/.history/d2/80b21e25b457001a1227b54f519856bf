@@ -1,0 +1,43 @@
+package Important_String_Inrv;
+
+import java.util.HashMap;
+import java.util.Set;
+
+public class CountDuplicate {   // count duplicate in words
+	
+	
+		
+
+	public static void main(String[] args) {
+		
+		String inputdata="JAVA java mava jara";
+		String str = inputdata.toLowerCase();
+		char [] ch = str.toCharArray();
+		HashMap<Character,Integer> maps = new HashMap<Character,Integer>();
+		for(char cdata :ch){
+			//System.out.println(cdata);
+			if(maps.containsKey(cdata))
+			{
+				int n = maps.get(cdata)+1;
+				//System.out.println("n="+n);
+				maps.put(cdata,n);
+			}
+			else{
+				maps.put(cdata, 1);
+			}
+	 }
+		Set<Character> setchar = maps.keySet();
+		for(Character crt : setchar)
+		{
+			if(maps.get(crt) > 1)
+			{
+				//System.out.println(crt);
+				System.out.println(crt+" = "+maps.get(crt) );
+			}
+		}
+  }
+		
+
+	  
+
+}

@@ -1,0 +1,32 @@
+package Strings_Programs;
+
+import java.util.function.Function;
+
+public class RemoveSpaces {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "i never forger other helps";
+		
+		
+		Function<String,String> f= s2->s2.replaceAll(" ","");  // remove the space 
+		
+		//Function<String,Integer> f= s2->s2.length()- s2.replaceAll(" ","").length(); // count the spaces 
+		
+		System.out.println(f.apply(str));
+		
+		String s2 = f.apply(str);
+		String c2=  s2.toLowerCase();
+		int n= c2.length()-1;
+		for(int i=0;i<=n;i++)
+		{
+			System.out.println((i));;
+		}
+		
+		
+	}
+
+	
+  
+}

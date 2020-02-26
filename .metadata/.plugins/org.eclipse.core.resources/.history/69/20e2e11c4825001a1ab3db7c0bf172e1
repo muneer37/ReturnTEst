@@ -1,0 +1,26 @@
+package Selenium_Frames;
+
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Flipcart {
+	
+	public static void main(String [] args) throws InterruptedException
+	{
+		
+		System.setProperty("webdriver.chrome.driver","c://drivers//chromedriver.exe");
+		ChromeDriver cd= new ChromeDriver();
+		cd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		cd.get("https://www.flipkart.com/");
+
+		Thread.sleep(1000);
+		cd.findElement(By.xpath("//*(contains[@class,'dHGf8H'])")).click();
+	
+		cd.findElement(By.className("_2zrpKA _1dBPDZ")).sendKeys("9705664547");
+		
+	}
+
+}

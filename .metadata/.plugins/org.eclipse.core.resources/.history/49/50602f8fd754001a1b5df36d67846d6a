@@ -1,0 +1,14 @@
+package Strings_Programs_intrv;
+
+public class Firstletter_Uppercase {
+
+	public static void main(String[] args) {
+	
+		String str = " i love india";
+		
+		String[] s2 = str.split(" ");
+		System.out.println(s2);
+
+	}
+
+}

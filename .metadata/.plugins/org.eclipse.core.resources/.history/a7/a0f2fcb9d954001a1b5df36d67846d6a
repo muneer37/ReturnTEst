@@ -1,0 +1,20 @@
+package Strings_Programs_intrv;
+
+public class Firstletter_Uppercase {
+
+	public static void main(String[] args) {
+	
+		String str = " i love india";
+		
+		StringBuilder sb = new StringBuilder();
+		String[] s2 = str.split(" ");
+		
+		for(int i=0;i<=s2.length;i++)
+		{
+			sb.append(Character.isUpperCase(s2[i].charAt(i))).append(s2[i].substring(1)).append(" ");
+		}
+        
+		System.out.println(sb);
+	}
+
+}

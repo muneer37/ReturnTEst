@@ -1,0 +1,53 @@
+package Strings;
+
+public class R_counts_in_String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String mk=" shaik Muneer loverLess Boy @ 1234";
+		
+		char ch[] = mk.toCharArray();
+		
+		int n= ch.length-1;
+		
+		int up=0;
+		int lc=0;
+		int nm=0;
+		int spce=0;
+		int special=0;
+		
+		for(int i=0;i<n;i++)
+		{
+			if(ch[i]>='a'|| ch[i]<='z')
+			{
+				up++;
+				System.out.println("upper values ="+up);
+			}
+			
+			else if(ch[i]>='A'|| ch[i]<='Z')
+			{
+				lc++;
+				System.out.println(" values ="+lc);
+			}
+			else if(ch[i]>='0'|| ch[i]<='9')
+			{
+				nm++;
+				System.out.println(" values ="+nm);
+			}
+			else if(ch[i]==' ' )
+			{
+				spce++;
+				System.out.println(" values ="+spce);
+			}
+			else
+			{
+				special++;
+				System.out.println("special ="+special);
+			}
+		}
+		
+		
+	}
+
+}

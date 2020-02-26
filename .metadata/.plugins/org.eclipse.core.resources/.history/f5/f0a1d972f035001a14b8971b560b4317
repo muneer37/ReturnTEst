@@ -1,0 +1,33 @@
+package work;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class loginpage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.setProperty("webdriver.chrome.driver","c://drivers/chromedriver.exe");
+        
+		ChromeDriver cd = new ChromeDriver();
+		
+		cd.get("file:///C:/Users/MUNEER%20BASHA/OneDrive/Desktop/windows.html");
+		cd.findElement(By.xpath("//input[@placeholder='firstname']")).sendKeys("Muneer");
+		cd.findElement(By.xpath("//input[@placeholder='firstname']")).sendKeys("Shaik");
+		
+		ArrayList<String> a = new ArrayList<String>(cd.getWindowHandles());
+		cd.switchTo().window(a.get(1));
+		
+		
+		cd.findElement(By.linkText("actitime")).click();
+		cd.findElement(By.name("username")).sendKeys("admin");
+		cd.findElement(By.name("pwd")).sendKeys("manager");
+		cd.switchTo().window(a.get(0));
+		cd.findElement(By.xpath("//input[@placeholder='mobile']"));
+		cd.findElement(By.xpath("//input[@type='submit']")).click();
+	}
+
+}

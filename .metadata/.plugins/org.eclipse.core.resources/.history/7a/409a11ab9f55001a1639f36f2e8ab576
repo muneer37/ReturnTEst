@@ -1,0 +1,30 @@
+package Practise;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Map;
+import java.util.Scanner;
+
+public class DataFromfile {
+
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	public void counteachword(String fileName,Map<String,Integer> maps) throws FileNotFoundException
+	{
+		Scanner sc = new Scanner(new File(fileName) );
+		if( sc.hasNext() )
+		{
+			String str = sc.next();
+			Integer n = str.length();
+		}
+		while(n!=1)
+		{
+			
+		}
+	}
+}

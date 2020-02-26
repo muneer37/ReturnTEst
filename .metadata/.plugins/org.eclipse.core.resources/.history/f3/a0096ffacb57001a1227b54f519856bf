@@ -1,0 +1,16 @@
+package Important_String_Inrv;
+
+import java.util.Set;
+
+public class two_Str_duplicate {
+	
+ public static void main(String [] args){
+	String test = "This sentence contains two words, one and two";
+	Set<String> duplicates = new  Set(test);
+	System.out.println("input : " + test); 
+	System.out.println("output : " + duplicates); 
+	}
+
+
+}
+	

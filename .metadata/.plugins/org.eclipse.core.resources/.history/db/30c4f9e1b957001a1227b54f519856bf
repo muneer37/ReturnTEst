@@ -1,0 +1,19 @@
+package Important_String_Inrv;
+
+public class twoStringcompare {
+	public static void main(String[] args) {
+		String a ="test";
+		String b="Test";
+		
+		String str=b.toLowerCase();
+		System.out.println(str);
+		String c=str+a;
+
+		System.out.println(c);
+		
+
+	}
+				
+	
+
+}

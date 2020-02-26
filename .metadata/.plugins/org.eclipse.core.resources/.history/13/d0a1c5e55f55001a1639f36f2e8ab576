@@ -1,0 +1,40 @@
+package Strings_Programs;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		String s="aab bccc";
+		char [] c=s.toCharArray();
+		int count=0;
+		String temp="";
+		for(int i=0;i<c.length;i++)
+		{
+			
+			for(int j=i+1;j<c.length;j++)
+				{	
+					if(c[i]==c[j])      
+					{   
+						c[j]=c[i];
+						count++; 
+						temp=temp+c[j];
+					}
+				}
+		}
+		System.out.println(count);
+		System.out.println(temp);
+		char[] temp1=temp.toCharArray();
+		for(int i=0;i<temp1.length;i++)
+		{
+			count=0;
+			for(int j=0;j<c.length;j++)
+				{	
+					if(temp1[i]==c[j])      
+					{                  
+						count++;     
+						temp=temp+c[j];
+					}
+				}
+			System.out.println(temp1[i]+"--->"+count);
+		}
+	}
+}

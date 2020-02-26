@@ -1,0 +1,42 @@
+package Practise;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class DataFromfile {
+
+	
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Map<String,Integer> words = new HashMap<String,Integer>();
+		counteachword("C:/testdata/seltext.txt",words);
+
+		System.out.println(maps);
+
+	}
+
+	public static void counteachword(String fileName,Map<String,Integer> maps) throws FileNotFoundException
+	{
+		int count=0;
+		Scanner sc = new Scanner(new File(fileName) );
+		while( sc.hasNext() )
+		{
+			String str = sc.next();
+			Integer n = str.length();
+			if( n != null)
+			{
+				count++;
+			}
+			else
+			{
+				count=1;
+				maps.put(str, count);
+			}
+		}
+		sc.close();
+		
+	}
+}

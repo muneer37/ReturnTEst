@@ -1,0 +1,22 @@
+class Drawing 
+{
+	void house()
+	{
+		System.out.println("not bad");
+	}
+}
+class Drawing2 extends Drawing 
+{
+	void house()
+	{
+		System.out.println(" super ");
+	}
+}
+
+
+	public static void main(String[] args) 
+	{
+		Drawing ref= new Drawing2();  // upcasting 
+		ref.house();
+	}
+}

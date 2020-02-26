@@ -1,0 +1,18 @@
+package Strings;
+
+public class R_SentenceReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String rr=" ew era dab";
+		
+		StringBuilder sb = new StringBuilder();
+		
+		 System.out.println(sb.reverse());
+		
+		
+	}
+
+}

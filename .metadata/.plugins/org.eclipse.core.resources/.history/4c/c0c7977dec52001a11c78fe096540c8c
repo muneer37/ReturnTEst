@@ -1,9 +1,0 @@
-package old2;
-
-public class Muneer
-{
-private static void main(String [] args)
-{
-System.out.println("Hello, World!");
-}
-}
